@@ -1,0 +1,358 @@
+@charset "utf-8";
+@import url('/ez210927/kjw/PA/css/arounzMOriIE.css');
+/* ie css*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* outline: 1px solid red; */
+}
+
+
+body {
+    min-width: 320px;
+}
+.inner {
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+header {
+    height: 58px;
+    padding: 0;
+    justify-content: center;
+}
+.Mmenubt {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 18px;
+    transform: translateY(-50%);
+    font-size: 26px;
+    color: #707070;
+    cursor: pointer;
+}
+.logo {
+    width: 61px;
+    height: 44px;
+    
+}
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    padding: 100px 20px;
+    z-index: 999;
+    display: block;
+    flex-direction: row;
+    justify-content: flex-start;
+    background: #fff;
+    transform: translateX(-100%);
+    transition: transform 0.5s;
+    overflow-y: auto;
+}
+nav.on {
+    transform: translateX(0%);
+    transition: transform 0.5s;
+}
+.gnb {
+    width: 100%;
+    height: auto;
+    display: block;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-right: 0;
+    white-space: nowrap;
+}
+
+.gnb > li {
+    min-height: 70px;
+}
+
+.gnb span {
+    font-size: 17px;
+    line-height: 70px;
+}
+
+
+.gnb > li > ul {
+   
+    background-color: rgba(112, 112, 112, 0.2);
+    position: relative;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+
+.gnb > li > ul a {
+    display: inline-block;
+    color: #707070;
+    font-size: 14px;
+    margin-bottom: 6px;
+    border-bottom: unset;
+}
+.gnb >li:hover > ul {
+    display: none;
+    
+}
+.gnb >li > ul.on {
+    display: flex;
+    
+}
+
+
+
+.gnb .coffee > li > ul a {
+    display: inline-block;
+    font-size: 12px;
+}
+
+
+.gnb .coffee > li > ul a:hover {
+    border-bottom: unset;
+}
+
+
+nav .icon {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+}
+nav .icon span{
+    font-size: 35px;
+}
+
+
+
+
+
+nav .Mclosebt {
+    display: block;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: 35px;
+    color: #707070;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.sec01 {
+    height: 20vw;
+    background-size: cover;
+    margin-top: 58px;
+}
+.sec01 span {
+    font-size: 6vw;
+    margin: 6px;
+}
+.sec01 span > span {
+    font-size: 11vw;
+}
+
+.sec02 .inner {
+    flex-direction: column;
+    padding: 20px 0;
+}
+
+.sec02L {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Lt {
+    height: 12vw;
+    text-align: center;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.Lt > p {
+    font-size: 2vw;
+}
+.Lt > h1 {
+    font-size: 3vw;
+}
+
+.Lb {
+    margin-top: 24px;
+}
+.Lb .pic {
+    width: 23vw;
+    height: 48vw;
+}
+.taste > div {
+    width: 8vw;
+    height: 8vw;
+}
+
+.Lb > p {
+    font-size: 3px;
+}
+
+
+.sec02R {
+    width: auto;
+    padding: 20px 0;
+}
+
+
+
+.roasting p {
+    font-size: 12px;
+    padding-right: 7px;
+}
+.roasting > div {
+    width: 55px;
+}
+.roasting > div >div {
+    width: 7px;
+    height: 7px;
+}
+
+.more > a {
+    display: flex;
+}
+.more > a >p {
+    font-size: 8px;
+}
+.more > a > span {
+    font-size: 9px;
+}
+.text {
+    width: 90%;
+}
+.text > p {
+    margin-top: 7px;
+    font-size: 2vw;
+    line-height: initial;
+    word-break: keep-all;
+}
+.text > p > br {
+    display: none;
+}
+
+
+.graph {
+    width: 100%;
+    height: 263px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 31px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    height: auto;
+}
+.f01 {
+    height: auto;
+    padding: 15px 0;
+}
+
+.f01 > div  {
+    font-size: 11px;
+    display: flex;
+    flex-direction: column;
+}
+.f01 p::after {
+    content: "|";
+}
+.f01 > div > div > p:last-child:after {
+    display: none;
+}
+
+
+
+
+.f02 {
+    height: auto;
+    padding: 15px 0;
+}
+.f02 > div {
+    display: flex;
+    flex-direction: column;
+}
+.f02 > div > div:first-child {
+    width: 74px;
+    height: 25px;
+    margin: 0 0 17px 0;
+}
+.f02 p {
+    font-size: 11px;
+    margin: 1px 0;
+}
+.infor {
+    height: auto;
+}
+.infor > div {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.infor p::after {
+   display: none;
+}
+.infor > div:nth-child(1) > div > p:first-child:after,
+.infor > div:nth-child(3) > div>  p:first-child::after {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 10px;
+    margin: 0 8px;
+    background-color: #222;
+}
+.f02 > div > div:last-child >p {
+    margin-top: 8px;
+}

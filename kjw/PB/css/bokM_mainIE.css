@@ -1,0 +1,151 @@
+@charset "utf-8";
+
+.ie11 .mSns ul,
+.ie10 .mSns ul {
+    width: 207px;
+}
+
+
+html.ie9 {
+    overflow-x: hidden;
+    overflow-y: visible;
+}
+
+
+.ie9 header {
+    z-index: 99999;
+}
+
+
+.ie9 .head02 > div > div:nth-child(2) {
+    display: block;
+    position: relative;
+    margin: 0;
+}
+
+
+.ie9 .sear > span {
+    position: absolute;
+    display: block;
+    right: 26px;
+}
+
+.ie9 .mMenuBt {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    display: block;
+    width: 26px;
+    height: 26px;
+    background: url(/ez210927/kjw/PB/img/i-menu.svg);
+}
+
+.ie9 nav {
+    /* display: block; */
+    z-index: 999998;
+}
+
+.ie9 nav .mCloseBt {
+    width: 24px;
+    background: url(/ez210927/kjw/PB/img/i-close.svg);
+}
+
+.ie9 nav .gnb,
+.ie9 nav .lnb {
+    float: left;
+}
+
+.ie9 nav .gnb ul > li > a {
+    line-height: 59px;
+}
+
+
+.ie9 .sec01 a {
+    height: 261px;
+}
+
+.ie9 .sec02 .sec02Top > div:nth-child(1) {
+    height: 210px;
+}
+
+.ie9 .sec02 .sec02Top > div:nth-child(2) {
+    height: 296px;
+}
+
+.ie9 .sec02 .sec02Top > div:nth-child(3) {
+    height: 364px;
+}
+
+.ie9 .sec02 .sec02Top .way > div:last-child > div > div p {
+    float: none;
+}
+
+.ie9 .way>div:nth-child(2) span {
+    margin: 12px 0;
+}
+
+.ie9 .sec02 .sec02Bottom .ser a {
+    margin-right: 1vw;
+}
+
+.ie9 .mSns ul.on {
+    display: block;
+    width: 207px;
+}
+
+.ie9 .mSns li {
+    float: left;
+}
+
+.ie9 .mSns > div > span {
+    width: 24px;
+    background: url(/ez210927/kjw/PB/img/i-arrow_drop_down_white.svg) no-repeat center;
+}
+
+.ie9 footer .foot01 div.inner {
+    text-align: center;
+}
+
+.ie9 footer .foot02 > div > a,
+.ie9 footer .foot02 > div > div {
+    margin: 0 auto;
+    float: none;
+    text-align: center;
+} 
+
+.ie9 .on.modal {
+    min-width: 425px;
+}
+
+.ie9 .modalBody > ul > li > ul > li {
+    float: none;
+}
+
+.is-ie .modalBody .closed p:last-child {
+    width: 44vw;
+}
+
+.ie9 fieldset > div > p {
+    width: 68px;
+}
+
+.ie9 fieldset > div {
+    position: relative;
+}
+
+
+
+.ie9 fieldset > div input + span {
+    position: absolute;
+    top: 13px;
+    right: 0;
+    left: 75%;
+}
+
+.ie9 .on.timeSel {
+    z-index: 999;
+    /* transform: translateX(0); */
+    right: 0;
+    left: 60%;
+}
+

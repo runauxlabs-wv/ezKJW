@@ -1,0 +1,36 @@
+@charset "utf-8";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* outline: 1px solid red; */
+}
+
+.curriculum {
+    width: 960px;
+    margin: 0 auto;
+    padding : 82px 45px 30px 45px;
+    height: 843px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    word-break: keep-all;
+}
+table th , td{
+    border: 1px solid #000;
+    text-align: center;
+    padding: 6px;
+}
+
+.curriculum th {
+    font-size: 17px;
+}
+.curriculum thead >tr:last-child >th {
+    font-size: 14px;
+    padding: 2px;
+}
+.curriculum td {
+    font-size: 14px;
+}

@@ -1,0 +1,521 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+/* Roboto 폰트 */
+@import url('https://fonts.googleapis.com/css2?family=Material+Icons+Outlined');
+/* Material Icons Outlined*/
+@import url('https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css');
+/* Swiper css*/
+@import url('/ez210927/kjw/PA/css/arounzOriIE.css');
+/* ie css*/
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* outline: 1px solid red; */
+}
+/* :root {
+    --swiper-pagination-color: #B6BD0B;
+} */
+
+.swiper-pagination-bullet-active {
+    background-color: #B6BD0B;
+}
+
+body {
+    min-width: 1280px;
+    color: #222;
+    font-family: 'Roboto', sans-serif;
+}
+.inner {
+    width: 1200px;
+    margin: 0 auto;
+}
+a {
+    text-decoration: none;
+    color: #222;
+}
+
+li {
+    list-style: none;
+}
+
+.gnb .click {
+    color: #B6BD0B;
+}
+
+
+header {
+    width: 100%;
+    height: 146px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 141px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background-color: #fff;
+    transform: all 0.3s;
+}
+
+header.on {
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+    /* transform: all 0.3s; */
+}
+
+.Mmenubt {
+    display: none;
+}
+.logo {
+    display: inline-block;
+    width: 137px;
+    height: 100px;
+    background-image: url(/ez210927/kjw/PA/img/logo.png);
+    background-size: cover;
+}
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.gnb {
+    width: 778px;
+    height: 35px;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 93px;
+    white-space: nowrap;
+}
+
+.gnb > li {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.gnb span {
+    font-size: 24px;
+    font-weight: bold;
+    color: #707070;
+    opacity: 1;
+   position: relative;
+    text-align: center;
+    transition: all 0.5s;
+    padding: 0 0 10px 0;
+}
+.gnb >li span::before {
+    opacity: 0;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+} 
+.gnb >li:nth-child(1) span::before {
+    content: "회사소개";
+}
+.gnb >li:nth-child(2) span::before {
+    content: "원두소개";
+}
+.gnb >li:nth-child(3) span::before {
+    content: "독립카페 교육 시스템";
+}
+.gnb >li:nth-child(4) span::before {
+    content: "커뮤니티";
+}
+.gnb > li:hover span {
+    color: transparent;
+    transition: all 0.5s;
+}
+.gnb >li:nth-child(1):hover span::before,
+.gnb >li:nth-child(2):hover span::before,
+.gnb >li:nth-child(3):hover span::before,
+.gnb >li:nth-child(4):hover span::before {
+    opacity: 1;
+    color: #707070;
+}
+
+.gnb >li:nth-child(3):hover span::before {
+    color: #B6BD0B
+}
+
+.gnb > li > ul {
+    width: 250px;
+    background-color: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    top: 40px;
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+}
+
+.gnb > li > ul a {
+    display: inline-block;
+    color: #707070;
+    font-size: 18px;
+    margin-bottom: 9px;
+    border-bottom: 2px solid transparent;
+}
+.gnb >li:hover > ul {
+    display: flex;
+    
+}
+.gnb >li > ul > li >a:hover {
+    border-color: #707070;
+}
+
+
+
+.gnb .coffee > li > ul a {
+    display: inline-block;
+    font-size: 15px;
+    margin-left: 20px;
+}
+
+
+.gnb .coffee > li > ul a:hover {
+    border-bottom: 2px solid #707070;
+}
+
+
+
+nav .icon span{
+    font-size: 50px;
+    color: #707070;
+}
+
+nav .Mclosebt {
+    display: none;
+}
+
+/* ----------------------------------------------------------------------------- */
+
+.sec01 {
+    width: 100%;
+    height: 425px;
+    background-image: url(/ez210927/kjw/PA/img/bland.png);
+    background-position: center;
+    display: flex;
+    align-items: center;
+    margin-top: 146px;
+}
+.sec01 > .inner {
+    display: flex;
+    justify-content: center;
+}
+.sec01 span {
+    color: #fff;
+    font-size: 78px;
+    font-weight: 100;
+    margin: 12px;
+    text-shadow: 0 0 30px #000, 0 0 5px #000;
+}
+.sec01 span > span {
+    font-size: 130px;
+}
+
+
+
+.sec02 {
+    width: 100%;
+}
+.dark,
+.mild,
+.rich {
+    width: 100%;
+    height: 100%;
+}
+
+.sec02 .inner {
+    display: flex;
+    justify-content: space-between;
+    padding: 78px 0;
+}
+
+.sec02L {
+    width: auto;
+    height: auto;
+}
+.Lt {
+    text-align: center;
+    padding: 36px 73px;
+    border-bottom: 1px solid #222;
+    border-top: 1px solid #222;
+}
+.Lt > p {
+    font-size: 31px
+}
+.Lt > h1 {
+    font-size: 42px;
+}
+.Lb {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 49px;
+}
+.Lb > div {
+    display: flex;
+}
+.Lb .pic {
+    width: 236px;
+    height: 535px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.taste > div {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+}
+
+.Lb > p {
+    width: 100%;
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.sec02R {
+    width: 665px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.text {
+    width: 100%;
+    padding: 9px 0 0 0;
+}
+.text > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.roasting {
+    display: flex;
+    align-items: center;
+}
+.roasting p {
+    font-size: 36px;
+    font-weight: 500;
+    padding-right: 28px;
+}
+.roasting > div {
+    width: 208px;
+    display: flex;
+    justify-content: space-between;
+}
+.roasting > div >div {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+
+.more > a {
+    display: flex;
+}
+.more > a >p {
+    font-size: 14px;
+}
+.more > a > span {
+    font-size: 21px;
+}
+
+.text > p {
+    margin-top: 33px;
+    font-size: 21px;
+    line-height: 38px;
+}
+
+
+
+.graph {
+    width: 100%;
+    height: 558px;
+}
+
+
+
+
+/* ---------------------------------------------------------------------------- */
+
+.dark .Lb .pic {
+    background-image: url(/ez210927/kjw/PA/img/dark2.png);
+}
+
+.dark .taste >div:nth-child(1) {
+    background-image: url(/ez210927/kjw/PA/img/OriginalBland/dark/darkChocolate.png);
+}
+.dark .taste > div:nth-child(2) {
+    background-image: url(/ez210927/kjw/PA/img/OriginalBland/dark/caramel.png);
+
+}
+.dark .taste > div:nth-child(3) {
+    background-image: url(/ez210927/kjw/PA/img/OriginalBland/dark/smoky.png);
+
+}
+.dark .roasting > div >div {
+    background-color: #603125;
+}
+.dark .graph {
+    background-image: url(/ez210927/kjw/PA/img/OriginalBland/dark/darkgraph.png);
+}
+
+
+
+
+.mild .Lb .pic {
+    background-image: url(/ez210927/kjw/PA/img/mild2.png);
+}
+
+.mild .taste >div:nth-child(1) {
+    background-image: url(/ez210927/kjw/PA/img/OriginalBland/mild/almond.png);
+
+}
+.mild .taste > div:nth-child(2) {
+    background-image: url(/ez210927/kjw/PA/img/OriginalBland/mild/blackSugar.png);
+
+}
+.mild .taste > div:nth-child(3) {
+    background-image: url(/ez210927/kjw/PA/img/OriginalBland/mild/Barley.png);
+
+}
+.mild .roasting > div >div {
+    background-color: #603125;
+}
+.mild .roasting > div >div:nth-child(4),
+.mild .roasting > div >div:nth-child(5) {
+    background-color: #E9E9E9;
+}
+.mild .graph {
+    background-image: url(/ez210927/kjw/PA/img/OriginalBland/mild/mildgraph.png);
+}
+
+
+
+
+.rich .Lb .pic {
+    background-image: url(/ez210927/kjw/PA/img/rich2.png);
+}
+
+.rich .taste >div:nth-child(1) {
+    background-image: url(/ez210927/kjw/PA/img/OriginalBland/rich/jasmine.png);
+
+}
+.rich .taste > div:nth-child(2) {
+    background-image: url(/ez210927/kjw/PA/img/OriginalBland/rich/sweetPotato.png);
+
+}
+.rich .taste > div:nth-child(3) {
+    background-image: url(/ez210927/kjw/PA/img/OriginalBland/rich/candy.png);
+
+}
+.rich .roasting > div >div {
+    background-color: #603125;
+}
+.rich .roasting > div >div:nth-child(3),
+.rich .roasting > div >div:nth-child(4),
+.rich .roasting > div >div:nth-child(5) {
+    background-color: #E9E9E9;
+}
+.rich .graph {
+    background-image: url(/ez210927/kjw/PA/img/OriginalBland/rich/richgraph.png);
+}
+
+
+
+
+footer {
+    width: 100%;
+    height: 236px;
+}
+.f01 {
+    width: 100%;
+    height: 77px;
+    background-color: #333;
+    display: flex;
+    align-items: center;
+}
+
+.f01 > div  {
+    font-size: 14px;
+    display: flex;
+}
+.f01 > div > div {
+    display: flex;
+}
+.f01 a {
+    color: #fff;
+}
+.f01 p::after {
+    content: "·";
+    font-weight: 900;
+    margin: 0 8px;
+    color: #fff;
+}
+.f01 > div > div:last-child > p:last-child::after {
+    display: none;
+}
+
+
+
+
+.f02 {
+    width: 100%;
+    height: 159px;
+    display: flex;
+    align-items: center;
+}
+.f02 > div {
+    display: flex;
+}
+.f02 > div > div:first-child {
+    width: 91px;
+    height: 31px;
+    background-image: url(/ez210927/kjw/PA/img/cklogo.png);
+    background-size: cover;
+    margin-right: 27px;
+}
+.f02 p {
+    font-size: 13px;
+}
+.infor {
+    display: flex;
+    flex-direction: column;
+    height: 64px;
+    justify-content: space-between;
+}
+.infor > div {
+    display: flex;
+}
+.infor > div:nth-child(1) >div,
+.infor > div:nth-child(3) >div {
+    display: flex;
+}
+
+.infor p::after {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 10px;
+    margin: 0 8px;
+    background-color: #222;
+}
+.infor > div:nth-child(1) > p::after,
+.infor > div:nth-child(2) > p:last-child::after,
+.infor > div:nth-child(3) > div:last-child > p:last-child::after {
+    display: none;
+}
+.f02 > div > div:last-child >p {
+    margin-top: 20px;
+}
