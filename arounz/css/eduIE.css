@@ -5,6 +5,10 @@
     transform: translateX(-50%);
 }
 
+.ie10 .swiper-container-horizontal>.swiper-scrollbar {
+    height: 15px;
+}
+
 @media (max-width: 768px) {
 
     .is-ie .mean > div {
@@ -13,6 +17,10 @@
     
     .is-ie .strength {
         width: 44%;
+    }
+
+    .ie10 .designSilde {
+        height: 92%;
     }
     
 
