@@ -1,0 +1,110 @@
+@charset "utf-8";
+
+.ie11 .mSns ul,
+.ie10 .mSns ul {
+    width: 207px;
+}
+
+html.ie9 {
+    overflow-x: hidden;
+    overflow-y: visible;
+}
+
+.ie9 header {
+    z-index: 99999;
+}
+
+.ie9 .head02 > div > div:nth-child(2) {
+    display: block;
+    position: relative;
+    margin: 0;
+}
+
+
+.ie9 .sear > span {
+    position: absolute;
+    display: block;
+    right: 26px;
+}
+
+.ie9 .mMenuBt {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    display: block;
+    width: 26px;
+    height: 26px;
+    background: url(../img/i-menu.svg);
+}
+
+.ie9 nav {
+    /* display: block; */
+    z-index: 999998;
+}
+
+.ie9 nav .mCloseBt {
+    width: 24px;
+    background: url(../img/i-close.svg);
+}
+
+.ie9 nav .gnb,
+.ie9 nav .lnb {
+    float: left;
+}
+
+.ie9 nav .gnb ul > li > a {
+    line-height: 59px;
+}
+
+
+
+/* --------------------------------------------------------------------------------- */
+
+
+
+
+.ie9 .massageWrap .next {
+    right: 10%;
+}
+
+.ie9 .massageWrap .prev {
+    left: 10%;
+}
+
+.ie9 .VR20th div {
+    width: auto;
+}
+
+.ie9 .specialEvent01 .slick-dots {
+    width: 168px;
+}
+
+.ie9 .specialEvent02 .slick-dots {
+    width: 126px;
+}
+
+
+.ie9 .mSns ul.on {
+    display: block;
+    width: 207px;
+}
+
+.ie9 .mSns li {
+    float: left;
+}
+
+.ie9 .mSns > div > span {
+    width: 24px;
+    background: url(../img/i-arrow_drop_down_white.svg) no-repeat center;
+}
+
+.ie9 footer .foot01 div.inner {
+    text-align: center;
+}
+
+.ie9 footer .foot02 > div > a,
+.ie9 footer .foot02 > div > div {
+    margin: 0 auto;
+    float: none;
+    text-align: center;
+} 

@@ -1,0 +1,858 @@
+@charset "utf-8";
+/* @import url('info_m_IE.css'); */
+/* ie css*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* outline: 1px solid red; */
+}
+
+body {
+    min-width: 320px;
+}
+
+.inner {
+    width: 90%;
+}
+
+
+
+
+header {
+    width: 100%;
+    height: auto;
+    border-bottom: 4px solid #1F497D;
+    position: fixed;
+    z-index: 800;
+}
+
+
+.head01 {
+    display: none;
+}
+
+
+.head02>div.inner {
+    padding: 16px 0;
+    position: relative;
+}
+
+
+.logo a:nth-child(1) {
+    width: 148px;
+    height: 24px;
+}
+
+.mLan {
+    display: inline-block;
+    font-size: 8px;
+    color: #1F497D;
+    padding: 0 2px;
+    border: 1px solid #999;
+    margin-left: 4px;
+}
+
+.mLan:hover {
+    background-color: #1F497D;
+    color: #fff;
+    border: none;
+}
+
+
+.sear>input {
+    display: none;
+}
+
+.sear>span {
+    font-size: 24px;
+    line-height: 24px;
+    position: static;
+}
+
+.lan {
+    display: none;
+}
+
+.mMenuBt {
+    display: inline-block;
+    color: #1F497D;
+    cursor: pointer;
+}
+
+
+
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 999;
+    background: #fff;
+    word-break: keep-all;
+    display: flex;
+    transform: translateX(-100%);
+    transition: transform 0.5s;
+    overflow: hidden;
+}
+
+nav.on {
+    transform: translateX(0%);
+    transition: transform 0.5s;
+}
+
+
+
+nav .gnb {
+    width: 30%;
+    height: 100%;
+    background-color: #1F497D;
+
+    padding: 62px 0 0 0;
+}
+
+nav .gnb>.inner {
+    width: 100%;
+}
+
+nav .gnb ul {
+    display: block;
+}
+
+nav .gnb ul>li {
+    width: 100%;
+    border: none;
+
+}
+
+nav .gnb ul>li:hover {
+    background-color: #4670A4;
+}
+
+nav .gnb ul>li.on {
+    background-color: #4670A4;
+}
+
+nav .gnb ul>li:first-child {
+    border-left: none;
+}
+
+nav .gnb ul>li>a {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .lnb {
+    width: 70%;
+    position: static;
+    display: block;
+    box-shadow: none;
+    padding: 62px 0 0 0;
+    position: relative;
+}
+
+nav .mlogin {
+    display: block;
+    font-size: 12px;
+    font-weight: 500;
+    color: #222;
+    position: absolute;
+    top: 22px;
+    left: 11px;
+}
+
+nav .mCloseBt {
+    display: block;
+    position: absolute;
+    top: 16px;
+    right: 7%;
+    color: #1F497D;
+    cursor: pointer;
+}
+
+nav .lnb>div {
+    width: 100%;
+    display: block;
+}
+
+nav .lnb>div>ul {
+    width: 100%;
+    padding: 24px 0 24px 32px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    border-right: none;
+    transform: translateX(100%);
+    transition: transform 0.5s;
+    position: absolute;
+}
+
+nav .lnb>div>ul.on {
+    transform: translateX(0%);
+    transition: transform 0.5s;
+}
+
+nav .lnb>div>ul:nth-child(1) {
+    border-left: none;
+}
+
+
+/* nav .lnb >div > ul:nth-child(6) {
+    background: url(../img/gnb7.gif) no-repeat 50% 50%;
+    background-size: auto;
+} */
+
+
+
+
+nav .lnb > div > ul > li > a,
+nav .lnb >div > ul > li > span  {
+    font-size: 13px;
+    font-weight: 500;
+    color: #1F497D;
+}
+
+
+
+nav .lnb>div>ul>li>ul>li>a {
+    font-size: 12px;
+}
+
+
+.sec {
+    padding: 56px 0 0 0;
+}
+
+
+
+aside {
+    display: none;
+}
+
+.homeBt {
+    display: none;
+}
+
+
+
+
+section {
+    width: 100%;
+    min-height: 800px;
+}
+
+
+section h2 {
+    width: 25%;
+    padding: 10px 1px;
+    font-size: 12px;
+}
+
+.content > div {
+    padding: 36px 0 0 0;
+}
+
+
+
+
+
+.guidewrap h3 {
+    font-size: 15px;
+}
+
+.guidewrap>div:nth-child(1) h3::after {
+    font-size: 10px;
+}
+
+.guidewrap>div:nth-child(3) h3::after {
+    font-size: 10px;
+}
+
+.guidewrap li {
+    font-size: 12px;
+    padding: 0 0 0 8px;
+}
+
+.guidewrap>div>ul>li::before {
+    width: 2px;
+    height: 2px;
+    top: 8px;
+}
+
+.guidewrap li>span.parking {
+    font-size: 12px;
+}
+
+.guidebook span {
+    font-size: 12px;
+}
+
+.guidebook a {
+    width: 10vw;
+}
+
+.guidewrap>div:nth-child(3) a,
+.guidewrap>div:nth-child(4) a {
+    font-size: 10px;
+}
+
+.guidewrap>div:nth-child(3) a>span,
+.guidewrap>div:nth-child(4) a>span {
+    font-size: 16px;
+}
+
+.guidewrap p {
+    font-size: 11px;
+}
+
+.tableOverflow {
+    overflow: auto;
+}
+
+
+/* ------------------------------------------------------------------------------------ */
+
+
+
+
+.booking>p {
+    font-size: 15px;
+}
+
+.booking > ul > li {
+    font-size: 12px;
+}
+
+.booking > ul > li > ul {
+    display: block;
+}
+
+.booking > ul > li > ul > li {
+    font-size: 11px;
+}
+
+.booking > div {
+    margin: 16px 0;
+}
+
+.booking > div span {
+    font-size: 20px;
+}
+
+.booking > div p {
+    font-size: 12px;
+}
+
+.booking > div p:first-child::after {
+    font-size: 10px;
+}
+
+.booking .closed p:first-child::after {
+    position: absolute;
+    margin: 0 19px;
+}
+
+.booking .closed p:first-child {
+    padding-right: 30px;
+}
+
+fieldset > p {
+    margin-bottom: 8px;
+}
+
+fieldset > div > p {
+    width: 68px;
+    margin-right: 16px;
+    font-size: 12px;
+}
+
+fieldset input {
+    width: 60vw;
+    height: 50px;
+    padding: 0 24px;
+    font-size: 12px;
+}
+
+fieldset input + span {
+    right: 36px;
+}
+
+fieldset .tel select,
+fieldset .tel input {
+    width: 18vw;
+}
+
+fieldset select {
+    width: 24vw;
+    height: 50px;
+    font-size: 12px;
+}
+
+fieldset select > option {
+    font-size: 12px;
+}
+
+fieldset button {
+    width: auto;
+    font-size: 12px;
+    padding: 6px 18px;
+}
+
+.timeSel {
+    top: 50px;
+    left: 84px;
+    width: 60vw;
+}
+
+fieldset ul li {
+    padding: 3px;
+    margin: 3px 2px;
+    font-size: 12px;
+}
+
+
+
+
+/* datapicker */
+#ui-datepicker-div {
+    width: 60vw;
+}
+
+.ui-datepicker-title > span {
+    font-size: 12px;
+}
+
+.ui-datepicker-calendar > thead span {
+    font-size: 12px;
+}
+
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default,
+.ui-button{
+    font-size: 12px;
+}
+
+
+
+
+.notice p {
+    font-size: 15px;
+}
+
+.notice li {
+    font-size: 12px;
+}
+
+
+
+/* /////////////////////////////////////////////////////////////////// */
+
+
+
+.cancle>div:nth-child(1)>p {
+    font-size: 15px;
+}
+
+.cancle>div:nth-child(1)>div:nth-of-type(1) {
+    font-size: 12px;
+}
+
+.consent {
+    padding: 8px;
+}
+
+.consent>span {
+    font-size: 24px;
+    margin-right: 4px;
+}
+
+.consent>div>p {
+    font-size: 13px;
+}
+
+.consent>div li {
+    font-size: 12px;
+}
+
+.consent>div>div {
+    display: block;
+}
+
+.consent>div>div>p {
+    font-size: 12px;
+}
+
+.legal>p {
+    font-size: 15px;
+}
+
+.certification {
+    display: block;
+}
+
+.certification>div {
+    width: 100%;
+    height: 440px;
+    margin: 0 0 20px 0;
+}
+
+.certification>div p {
+    font-size: 15px;
+}
+
+.certification>div>div>ul:nth-child(1) li {
+    font-size: 12px;
+}
+
+.certification>div>div>ul:nth-child(1) li::before {
+    width: 2px;
+    height: 2px;
+    top: 9px;
+}
+
+.certification>div>div>ul:nth-child(2) li {
+    font-size: 12px;
+}
+
+.certification span {
+    font-size: 36px;
+}
+
+
+
+
+/* ---------------------------------------------------------------------------------------- */
+
+.group p {
+    font-size: 12px;
+}
+
+.group a {
+    font-size: 10px;
+}
+
+.group a>span {
+    font-size: 16px;
+}
+
+/* ----------------------------------------------------------------------------------------- */
+
+
+.facility>div>div {
+    padding: 66% 8px 0 8px;
+}
+
+.facility h3 {
+    font-size: 15px;
+}
+
+.facility h3.shop::after {
+    font-size: 10px;
+}
+
+.facility p {
+    font-size: 12px;
+}
+
+.facility p.tel {
+    padding-top: 12px;
+    font-size: 11px;
+}
+
+
+/* --------------------------------------------------------------------------------------- */
+
+
+.wayInfo {
+    align-items: flex-start;
+    padding: 4px 0;
+}
+
+.wayInfo span {
+    width: 18px;
+    height: 18px;
+    font-size: 12px;
+    margin: 0;
+}
+
+
+.wayInfo>div>p:nth-child(1) {
+    font-size: 13px;
+}
+
+.wayInfo>div>p:nth-child(2) {
+    font-size: 12px;
+}
+
+
+
+.transportation>p {
+    font-size: 15px;
+}
+
+.way table {
+    font-size: 12px;
+}
+
+.way table th,
+.way table td {
+    padding: 4px 8px;
+}
+
+.way iframe {
+    height: 40vw;
+}
+
+
+/* ------------------------------------------------------------------------------------------ */
+
+
+
+.FAQ>ul>li {
+    padding: 12px 22px 12px 8px;
+}
+
+.FAQ>ul>li:nth-child(1) {
+    font-size: 12px;
+}
+
+
+
+.FAQ>ul>li:nth-child(1)>span:nth-child(1) {
+    font-size: 18px;
+}
+
+.FAQ>ul>li:nth-child(1)>span:nth-child(2) {
+    padding: 0 8px;
+}
+
+.FAQ>ul>li:nth-child(1)>span:nth-child(3)::before {
+    padding: 0 4px 0 0;
+}
+
+.FAQ>ul>li:nth-child(1)>span:nth-child(4) {
+    right: 4px;
+    font-size: 16px;
+}
+
+
+.FAQ>ul>li:nth-child(2) {
+    font-size: 12px;
+}
+
+.FAQ>ul>li:nth-child(2)>span {
+    font-size: 18px;
+}
+
+.FAQgroup::after {
+    font-size: 10px;
+}
+
+
+/* ---------------------------------------------------------------------- */
+.news>li {
+    padding: 12px 8px;
+}
+
+.news p {
+    width: 75%;
+    font-size: 13px;
+}
+
+.news p>span {
+    margin: 0 4px 0 0;
+}
+
+.news>li>ul {
+    font-size: 11px;
+    padding: 8px 8px 0 0;
+}
+
+.news>li>ul>li>span {
+    padding: 0 4px 0 0;
+    font-size: 15px;
+}
+
+.news>li>ul>li:last-child {
+    width: 44px;
+    padding: 0 0 0 8px;
+}
+
+.news>li:nth-child(1)>p::before,
+.news>li:nth-child(2)>p::before,
+.news>li:nth-child(3)>p::before {
+    font-size: 17px;
+    margin: 0 4px 0 0;
+}
+
+
+
+/* --------------------------------------------------------------------------------------- */
+.noticeBoard>li {
+    padding: 12px 8px;
+}
+
+.noticeBoard > li > p {
+    font-size: 13px;
+}
+
+.noticeBoard > li > p > span{
+    font-size: 17px;
+}
+
+.noticeBoard > li > div {
+    padding: 8px 0 0 0;
+    font-size: 11px;
+}
+
+.noticeBoard > li > div p > span {
+    font-size: 16px;
+}
+
+.noticeBoard > li > div > ul span {
+    padding: 0 4px 0 0;
+    font-size: 15px;
+}
+
+.noticeBoard > li > div > ul > li:last-child {
+    width: 32px;
+    padding: 0 0 0 8px;
+}
+
+
+/* ----------------------------------------------------------------------------- */
+
+
+
+
+.foot01>div.inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.foot01 a {
+    margin: 8px 16px;
+    font-size: 12px;
+}
+
+
+footer>div:nth-child(2) {
+    display: block;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+
+}
+
+.mSns {
+    position: relative;
+}
+
+.mSns>div {
+    padding: 0 16px;
+    font-size: 13px;
+    line-height: 34px;
+    color: #fff;
+    cursor: pointer;
+    text-align: center;
+}
+
+.mSns>div>span {
+    font-size: 17px;
+}
+
+.mSns ul {
+    align-items: center;
+    position: absolute;
+    z-index: 99;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    display: none;
+}
+
+.mSns ul.on {
+    display: flex;
+}
+
+
+.mSns li {
+    width: 37px;
+    height: 37px;
+    margin: 4px 2px;
+}
+
+.mSns li a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+
+}
+
+.mSns li:nth-child(1) {
+    background: url(../img/iconset.png) no-repeat -399px -57px;
+}
+
+.mSns li:nth-child(2) {
+    background: url(../img/iconset.png) no-repeat -399px 0;
+
+}
+
+.mSns li:nth-child(3) {
+    background: url(../img/iconset.png) no-repeat -399px -228px;
+}
+
+.mSns li:nth-child(4) {
+    background: url(../img/iconset.png) no-repeat -399px -171px;
+}
+
+.mSns li:nth-child(5) {
+    background: url(../img/iconset.png) no-repeat -399px -114px;
+}
+
+
+
+
+
+.foot02 .inner {
+    padding: 16px 0 85px 0;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.foot02 a+div {
+    padding-left: 0;
+}
+
+.foot02 address {
+    font-size: 12px;
+    padding: 4px 0;
+}
+
+.foot02 address span {
+    display: block;
+}
+
+.foot02 address span:nth-child(2) {
+    display: none;
+}
+
+.foot02 small {
+    font-size: 12px;
+}
+
+.foot02 img {
+    right: 50%;
+    bottom: 0;
+    transform: translateX(50%);
+}

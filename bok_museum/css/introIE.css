@@ -1,0 +1,335 @@
+@charset "utf-8";
+
+
+/* .ie9 이하인 버전에서만 적용 */
+.is-ie.ie9 .clearfix::after{
+    content: "";
+    /* display: table; */
+    display: block;
+    clear: both;
+}
+
+
+
+/* .ie11 IE11전용 flex안되는 것 보정 */
+
+.ie11 .sns ul {
+    width: 207px;
+}
+
+.ie11 .edu li span:nth-child(1) {
+    padding: 0;
+}
+
+
+
+/* .ie10 IE10전용 flex안되는 것 보정 */
+
+.ie10 .sns ul {
+    width: 207px;
+}
+
+.ie10 .edu li span:nth-child(1) {
+    padding: 0;
+}
+
+/* .ie9 IE9전용 flex안되는 것 보정 */
+
+.ie9 .head01 .inner .link {
+    float: left;
+    display: block;
+}
+
+.ie9 .head01 .inner .login {
+    float: right;
+    display: block;
+}
+
+.ie9 .link a {
+    display: block;
+    float: left;
+}
+
+.ie9 .link a span {
+    display: none;
+}
+
+.ie9 .login > a {
+    float: left;
+}
+
+.ie9 .login > div {
+    float: right;
+}  
+
+
+.ie9 .sns > div span {
+    width: 20px;
+    background: url(../img/i-arrow_drop_down.svg) no-repeat center;
+}
+
+
+.ie9 .sns:hover ul {
+    display: block;
+    width: 207px;
+}
+
+.ie9 .sns li {
+    float: left;
+}
+
+
+.ie9 .head02 > div > div:nth-child(1) {
+    float: left;
+}
+
+.ie9 .head02 > div > div:nth-child(2) {
+    float: right;
+    margin: 11px 0 0 0;
+}
+
+.ie9 .sear,
+.ie9 .lan {
+    float: left;
+}
+
+.ie9 .sear span {
+    width: 26px;
+   background: url(../img/i-search.svg) no-repeat center; 
+}
+
+.ie9 .lan a {
+    float: left;
+}
+
+
+
+
+.ie9 nav .gnb ul li {
+    float: left;
+}
+
+.ie9 nav .lnb {
+    z-index: 99999;
+}
+
+.ie9 nav .lnb > div > ul {
+    float: left;
+    height: 591px;
+}
+
+
+
+
+/* ------------------------------------------------------------------------------- */
+
+.ie9 aside {
+    float: left;
+}
+
+
+.ie9 #lnb6_01 > .Tab > span:nth-child(2) {
+    width: 24px;
+    height: 24px;
+    background: url(../img/i-expand_more_white.svg) no-repeat center;
+    float: right;
+} 
+
+.ie9 #lnb6_01 > .Tab:hover > span:nth-child(2) {
+    background: url(../img/i-expand_more.svg) no-repeat center;
+} 
+
+.ie9 section {
+    float: right;
+}
+
+.ie9 section .homeBt a:nth-of-type(1) span {
+    width: 24px;
+    background: url(../img/i-home.svg) no-repeat center;
+}
+
+.ie9 section .homeBt > span {
+    width: 24px;
+    background: url(../img/i-chevron_right.svg) no-repeat center;
+}
+
+
+.ie9 section > div:nth-child(2) > div > div:first-child h2 {
+    float: left;
+}
+
+
+
+.ie9 .massageWrap .next {
+    width: 32px;
+    right: 188px;
+    background: url(../img/i-navigate_next.svg) no-repeat center;
+}
+
+.ie9 .massageWrap .prev {
+    width: 32px;
+    left: 188px;
+    background: url(../img/i-navigate_before.svg) no-repeat center;
+}
+
+.ie9 .VR20th.on {
+    display: block;
+}
+
+.ie9 .VR20th img,
+.ie9 .VR20th div {
+    float: left;
+}
+
+.ie9 .VR20th div {
+    width: 320px;
+}
+
+
+.ie9 .specialEvent .slick-dots {
+    display: block;
+    margin: 0 auto;
+}
+
+.ie9 .specialEvent01 .slick-dots {
+    width: 216px;
+}
+
+.ie9 .specialEvent02 .slick-dots {
+    width: 162px;
+}
+
+.ie9 .specialEvent .slick-dots li {
+    float: left;
+}
+
+.ie9 .specialEvent .next {
+    width: 58px;
+    background: url(../img/i-navigate_next.svg) no-repeat center;
+}
+
+.ie9 .specialEvent .prev {
+    width: 58px;
+    background: url(../img/i-navigate_before.svg) no-repeat center;
+}
+
+
+
+.ie9 footer .foot02 > div > a,
+.ie9 footer .foot02 > div > div {
+    float: left;
+} 
+
+
+@media all and (max-width: 768px) {
+
+    .ie11 .mSns ul,
+    .ie10 .mSns ul {
+        width: 207px;
+    }
+    
+    html.ie9 {
+        overflow-x: hidden;
+        overflow-y: visible;
+    }
+    
+    .ie9 header {
+        z-index: 99999;
+    }
+    
+    .ie9 .head02 > div > div:nth-child(2) {
+        display: block;
+        position: relative;
+        margin: 0;
+    }
+    
+    
+    .ie9 .sear > span {
+        position: absolute;
+        display: block;
+        right: 26px;
+    }
+    
+    .ie9 .mMenuBt {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        display: block;
+        width: 26px;
+        height: 26px;
+        background: url(../img/i-menu.svg);
+    }
+    
+    .ie9 nav {
+        /* display: block; */
+        z-index: 999998;
+    }
+    
+    .ie9 nav .mCloseBt {
+        width: 24px;
+        background: url(../img/i-close.svg);
+    }
+    
+    .ie9 nav .gnb,
+    .ie9 nav .lnb {
+        float: left;
+    }
+    
+    .ie9 nav .gnb ul > li > a {
+        line-height: 59px;
+    }
+    
+    
+    
+    /* --------------------------------------------------------------------------------- */
+    
+    
+    
+    
+    .ie9 .massageWrap .next {
+        right: 10%;
+    }
+    
+    .ie9 .massageWrap .prev {
+        left: 10%;
+    }
+    
+    .ie9 .VR20th div {
+        width: auto;
+    }
+    
+    .ie9 .specialEvent01 .slick-dots {
+        width: 168px;
+    }
+    
+    .ie9 .specialEvent02 .slick-dots {
+        width: 126px;
+    }
+    
+    
+    .ie9 .mSns ul.on {
+        display: block;
+        width: 207px;
+    }
+    
+    .ie9 .mSns li {
+        float: left;
+    }
+    
+    .ie9 .mSns > div > span {
+        width: 24px;
+        background: url(../img/i-arrow_drop_down_white.svg) no-repeat center;
+    }
+    
+    .ie9 footer .foot01 div.inner {
+        text-align: center;
+    }
+    
+    .ie9 footer .foot02 > div > a,
+    .ie9 footer .foot02 > div > div {
+        margin: 0 auto;
+        float: none;
+        text-align: center;
+    } 
+
+}

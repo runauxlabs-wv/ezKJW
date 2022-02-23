@@ -1,0 +1,909 @@
+@charset "utf-8";
+/* @import url('edu_m_IE.css'); */
+/* ie css*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* outline: 1px solid red; */
+}
+
+
+/* @media (min-width:641px){
+    .oo { display: block;
+    
+    }} */
+.swiper-horizontal>.swiper-scrollbar {
+    height: 3px;
+}
+.swiper-button-next:after, .swiper-button-prev:after {
+    font-size: 40px;
+}
+body {
+    min-width: 320px;
+}
+.inner {
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+
+
+
+header {
+    height: 58px;
+    padding: 0;
+    justify-content: center;
+}
+.Mmenubt {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 18px;
+    transform: translateY(-50%);
+    font-size: 26px;
+    color: #707070;
+    cursor: pointer;
+}
+.logo {
+    width: 61px;
+    height: 44px;
+    
+}
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    padding: 100px 20px;
+    z-index: 999;
+    display: block;
+    flex-direction: row;
+    justify-content: flex-start;
+    background: #fff;
+    transform: translateX(-100%);
+    transition: transform 0.5s;
+    overflow-y: auto;
+}
+nav.on {
+    transform: translateX(0%);
+    transition: transform 0.5s;
+}
+.gnb {
+    width: 100%;
+    height: auto;
+    display: block;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-right: 0;
+    white-space: nowrap;
+}
+
+.gnb > li {
+    min-height: 70px;
+}
+
+.gnb span {
+    font-size: 17px;
+    line-height: 70px;
+}
+
+
+.gnb > li > ul {
+   
+    background-color: rgba(112, 112, 112, 0.2);
+    position: relative;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+
+.gnb > li > ul a {
+    display: inline-block;
+    color: #707070;
+    font-size: 14px;
+    margin-bottom: 6px;
+    border-bottom: unset;
+}
+.gnb >li:hover > ul {
+    display: none;
+    
+}
+.gnb >li > ul.on {
+    display: flex;
+    
+}
+
+
+
+.gnb .coffee > li > ul a {
+    display: inline-block;
+    font-size: 12px;
+}
+
+
+.gnb .coffee > li > ul a:hover {
+    border-bottom: unset;
+}
+
+
+nav .icon {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+}
+nav .icon span{
+    font-size: 35px;
+}
+
+
+
+
+
+nav .Mclosebt {
+    display: block;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: 35px;
+    color: #707070;
+    cursor: pointer;
+}
+
+
+
+
+/* ------------------------------------------------------------------------------------------------- */
+
+
+.sec01 {
+    height: 20vw;
+    background-size: cover;
+    margin-top: 58px;
+}
+.sec01 p {
+    font-size: 25px;
+    margin: 6px;
+    letter-spacing: 1rem;
+}
+
+
+
+/* ---------------------------------------------------------------------- */
+
+
+
+
+
+.sec02>.inner {
+    padding: 20px 0;
+}
+
+.sec02 h1 {
+    font-size: 4vw;
+}
+
+
+.mean {
+    width: 90%;
+    margin: 0 auto;
+    padding: 24px 0 15px 0;
+}
+
+.mean>p {
+    /* width: 100%; */
+    font-size: 3vw;
+    margin-right: 15px;
+    word-break: keep-all;
+}
+
+
+.mean>div>p {
+    font-size: 2vw;
+    word-break: break-all;
+}
+.mean>div>p > br {
+    display: none;
+}
+
+
+
+
+
+
+.outline>div:last-child>div {
+    width: 48%;
+    height: 26vw;
+}
+
+
+
+
+
+
+
+.found>p {
+    width: 90%;
+    font-size: 2vw;
+    margin: 0 auto;
+    word-break: keep-all;
+    padding: 5vw 0;
+}
+
+
+
+.wrap>p {
+    font-size: 2vw;
+    padding: 2vw 10vw;
+    margin-bottom: 23px;
+}
+
+.wrap>div {
+    width: 90%;
+}
+
+.strength {
+    width: 100%;
+    border: 1px solid #C4C4C4;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.strength>p {
+    height: 7vw;
+    padding: 0;
+    font-size: 2vw;
+    word-break: keep-all;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.strength>div {
+    height: auto;
+    padding: 20px 0;
+    justify-content: flex-start;
+}
+
+.check {
+    margin-bottom: 3vw;
+}
+
+.check>span {
+    font-size: 3vw;
+    padding-right: 7px;
+}
+
+
+.check>div>p:first-child {
+    font-size: 2vw;
+}
+
+.check>div>p:last-child {
+    font-size: 1vw;
+    padding-top: 3px;
+}
+
+.plus>span {
+    padding: 1vw;
+    font-size: 1rem;
+    color: #fff;
+    margin: 0 10px;
+}
+
+
+
+
+
+
+
+
+/* ------------------------------------------------------------------------------------- */
+
+
+
+.sec03 .inner {
+    padding: 20px 0;
+}
+
+.sec03 h1 {
+    font-size: 4vw;
+    margin: 0 0 24px 0;
+}
+
+
+.botton>div {
+    flex-basis: 14%;
+    font-size: 2vw;
+    border-bottom: 1px solid #aaa;
+    word-break: keep-all;
+}
+
+
+
+.content {
+    height: 80vw;
+    padding: 30px 0;
+}
+
+.content>div {
+    width: 98%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+
+
+
+.consulting>p {
+    font-size: 11px;
+    word-break: keep-all;
+}
+
+
+
+.consultingWrap {
+    word-break: keep-all;
+}
+
+
+
+.consultingWrap>div>div {
+    width: 40%;
+    height: 22vw;
+    margin: 3vw;
+    padding: 5vw 2vw 0 5vw;
+}
+
+.consultingWrap>div:nth-child(2) {
+    width: 20vw;
+    height: 20vw;
+    background-position: center;
+    background-size: cover;
+}
+
+.consultingWrap p:first-child {
+    font-size: 3vw;
+    margin-bottom: 5px;
+}
+
+.consultingWrap p:last-child {
+    font-size: 2vw;
+}
+
+
+.consultingWrap br {
+    display: none;
+}
+
+/* ------------------------------------------------------------------------------------------------ */
+
+
+
+.customizedEducation>.free>p:first-child {
+    font-size: 11px;
+}
+
+
+
+.customizedEducation>.free>p:nth-child(2) {
+    font-size: 8px;
+    text-align: center;
+}
+
+.aa {
+    margin-top: 0;
+    overflow: auto;
+}
+
+
+
+.eduNum {
+    height: 25vw;
+    background-position: center;
+}
+
+
+
+.eduNum>p {
+    padding: 1vw;
+    font-size: 7vw;
+}
+
+.eduNum~div {
+    padding: 10px 0 0 13px;
+    word-break: keep-all;
+}
+
+.eduNum~div>h3 {
+    font-size: 3vw;
+}
+
+.eduNum~div li {
+    font-size: 2vw;
+}
+
+.license {
+    display: none;
+}
+
+
+
+
+
+/* ----------------------------------------------------------------------------------------- */
+
+
+
+
+
+
+.manage>p {
+    font-size: 11px;
+}
+
+
+
+
+
+
+.circle>div {
+    width: 20vw;
+    height: 20vw;
+}
+
+
+
+
+.circle p {
+    font-size: 3vw;
+}
+
+.circle~span {
+    font-size: 35px;
+    padding: 0 2vw;
+}
+
+.three>div {
+    width: auto;
+}
+
+.three>div>div {
+    width: 12vw;
+    height: 24vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+.three>p {
+    font-size: 3vw;
+}
+
+
+
+/* ------------------------------------------------------------------------------------ */
+
+
+
+.content > .design {
+    height: 100%;
+}
+
+.design>p {
+    font-size: 11px;
+    margin-bottom: 30px;
+}
+
+
+
+.designSilde {
+    width: 100%;
+}
+
+
+
+
+.Dtext {
+    width: 25%;
+    padding: 0;
+}
+
+.Dtext>h3 {
+    font-size: 2vw;
+}
+
+.Dtext>div {
+    width: 100%;
+    height: 1px;
+    margin: 7px 0;
+}
+
+.Dtext>p {
+    display: none;
+}
+
+
+.designNum {
+    width: 70%;
+}
+
+
+
+
+
+/* --------------------------------------------------------------------------------------- */
+
+
+
+.content > .menu {
+    height: 95%;
+}
+
+
+.menu>p {
+    font-size: 11px;
+    text-align: center;
+    word-break: keep-all;
+}
+
+
+
+.offer {
+    margin: 0;
+}
+
+
+
+.offer>div:first-child>p:nth-child(1) {
+    font-size: 3vw;
+}
+
+.offer>div:first-child>p:nth-child(2) {
+    font-size: 1vw;
+    margin-top: 3px;
+}
+
+.offer>span {
+    font-size: 25px;
+    margin: 0 2vw;
+}
+
+.offer>div:last-child {
+    align-items: center;
+}
+
+.offer>div:last-child > p {
+    font-size: 2vw;
+}
+
+.offer>div:last-child>span {
+    margin: 0 1vw;
+    font-size: 20px;
+}
+
+
+
+.menuNum {
+    height: 25vw;
+    background-position: center;
+}
+
+.menuNum>p {
+    padding: 1vw;
+    font-size: 7vw;
+}
+
+
+
+.menuNum~div {
+    padding: 10px 0 0 13px;
+}
+
+.menuNum~div>h3 {
+    font-size: 3vw;
+}
+
+.menuNum~div>p {
+    font-size: 2vw;
+    margin-top: 1vw;
+}
+
+
+
+
+/* ----------------------------------------------------------------------------------------- */
+
+
+
+
+.CS>p {
+    font-size: 11px;
+    word-break:keep-all;
+    margin-bottom: 34px;
+}
+
+.CS>p > br {
+    display: none;
+}
+
+
+.CS>p>span:last-child {
+    font-size: 8px;
+    padding-left: 8px;
+    display: block;
+}
+
+.Cc {
+    width: 90%;
+    overflow: auto;
+    margin: 0 auto;
+}
+.CSslide >div {
+    justify-content: unset;
+    align-items: flex-start;
+}
+
+.CSslide .CSslides {
+    width: auto;
+    height: 100%;
+}
+.CS01,.CS02,.CS03 {
+    width: auto;
+    height: 25vw;
+}
+
+
+.CSslide .CSslides > div:last-child {
+    padding: 10px 0 0 13px;
+}
+
+.CSslide .CSslides h3 {
+    font-size: 3vw;
+}
+
+.CSslide .CSslides ul {
+    padding-top: 0;
+}
+
+.CSslide .CSslides li {
+    font-size: 2vw;
+}
+
+
+
+.CS03~div>div>span {
+    font-size: 2vw;
+}
+
+
+
+
+/* ---------------------------------------------------------------------------------------- */
+
+
+.content .curriculum {
+    padding-top: 30px;
+    position: relative;
+}
+
+.curriculum>div {
+    width: 90%;
+    padding: 0;
+}
+
+
+
+.curriculum table {
+    white-space: nowrap;
+}
+
+.curriculum table::before{
+    content: "**모바일에서 보는 커리큘럼은\A 스크롤을 이용해야하는 점 양해 부탁드립니다";
+    white-space: pre;
+    position: absolute;
+    left: 5%;
+    top: 0%;
+    font-size: 7px;
+    color: #aaa;
+    min-width: 320px;
+}
+
+.curriculum table th,
+.curriculum table td {
+    padding: 1vw;
+}
+
+
+
+.curriculum th {
+    font-size: 13px;
+}
+
+.curriculum td {
+    font-size: 12px;
+}
+
+
+.curriculum thead>tr:nth-child(3)>th {
+    font-size: 9px;
+}
+
+
+
+
+
+
+/* ---------------------------------------------------------------------------------------- */
+
+
+
+.ProgramApply {
+    padding: 20px 0;
+}
+
+.ProgramApply>div {
+    width: 100%;
+}
+
+.programTB {
+    border-spacing: 0;
+    word-break: keep-all;
+}
+
+
+
+
+
+.programTB>thead th{
+    font-size: 2vw;
+}
+
+
+
+.programTB>thead th:nth-child(2)::before,
+.programTB>thead th:nth-child(3)::before {
+    border-right: 10px solid transparent;
+    border-bottom: 13px solid transparent;
+    border-left: 10px solid transparent;
+}
+
+.programTB>thead th:nth-child(2)::before {
+    border-top: 5px solid #5E4638;
+}
+
+.programTB>thead th:nth-child(3)::before {
+    border-top: 5px solid #B6BD0B;
+}
+
+
+.programTB th {
+    padding: 9px;
+    font-size: 2vw;
+
+}
+
+.programTB td {
+    padding: 13px 1px;
+    font-size: 2vw;
+}
+
+
+
+
+.programTB .OX {
+    font-size: 3vw;
+}
+
+.programTB~p {
+    font-size: 1vw;
+}
+
+
+.apply {
+    padding-top: 25px;
+}
+
+.apply a {
+    display: flex;
+    font-size: 2vw;
+    text-align: center;
+    margin: 0 9px;
+    padding: 7px 15px;
+    word-break: keep-all;
+    align-items: center;
+}
+.apply a:nth-child(1) {
+    background-color: #5E4638;
+    color: #fff;
+}
+.apply a:nth-child(2) {
+    background-color: #B6BD0B;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ----------------------------------------------------------------------------------------------------------- */
+
+
+
+footer {
+    height: auto;
+}
+.f01 {
+    height: auto;
+    padding: 15px 0;
+}
+
+.f01 > div  {
+    font-size: 11px;
+    display: flex;
+    flex-direction: column;
+}
+.f01 p::after {
+    content: "|";
+}
+.f01 > div > div > p:last-child:after {
+    display: none;
+}
+
+
+
+
+.f02 {
+    height: auto;
+    padding: 15px 0;
+}
+.f02 > div {
+    display: flex;
+    flex-direction: column;
+}
+.f02 > div > div:first-child {
+    width: 74px;
+    height: 25px;
+    margin: 0 0 17px 0;
+}
+.f02 p {
+    font-size: 11px;
+    margin: 1px 0;
+}
+.infor {
+    height: auto;
+}
+.infor > div {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.infor p::after {
+   display: none;
+}
+.infor > div:nth-child(1) > div > p:first-child:after,
+.infor > div:nth-child(3) > div>  p:first-child::after {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 10px;
+    margin: 0 8px;
+    background-color: #222;
+}
+.f02 > div > div:last-child >p {
+    margin-top: 8px;
+}
