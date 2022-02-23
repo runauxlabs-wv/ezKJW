@@ -24,7 +24,7 @@
 
 
 
-@media all and (max-width: 768px) {
+@media (max-width: 768px) {
 
     .is-ie .coffeeWrap .box {
         background-color: transparent;

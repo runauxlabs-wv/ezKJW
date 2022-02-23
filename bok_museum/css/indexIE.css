@@ -383,7 +383,7 @@
 
 
 
-@media all and (max-width: 768px) {
+@media (max-width: 768px) {
 
     .ie11 .mSns ul,
     .ie10 .mSns ul {

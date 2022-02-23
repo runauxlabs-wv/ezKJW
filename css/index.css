@@ -198,7 +198,7 @@ li {
     content: "";
     width: 100px;
     height: 10px;
-    background: url(img/arrow.svg) no-repeat center/ contain;
+    background: url(../img/arrow.svg) no-repeat center/ contain;
     position: relative;
     bottom: 7px;
 }
@@ -207,7 +207,7 @@ li {
     color: #777;
 }
 .title a:hover::after {
-    background: url(img/arrowhover.svg) no-repeat center/ contain;
+    background: url(../img/arrowhover.svg) no-repeat center/ contain;
 }
 
 .update {
